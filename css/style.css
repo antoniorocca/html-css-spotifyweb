@@ -22,11 +22,12 @@ body {
     justify-content: space-between;
 }
 #site_content{
-    height: 900px;
+    height: 100%;
 }
 aside.main_menu {
     min-width: 250px;
     background-color: black;
+    height: 100%;
     margin-bottom: 60px;
     position: relative;
 }
@@ -91,13 +92,13 @@ span:hover {
   color: white;
 }
 .covers_section {
-    background-color: rgb(34, 35, 38);
+    background-color: #01000a;
     padding: 20px;
     overflow-y: auto;
     overflow-x: hidden;
     padding-top: 80px;
     width: calc(100% - 250px);
-    height: calc(100% - 60px);
+    padding-bottom: 60px;
 }
 .subscribe_banner {
     position: fixed;
@@ -141,22 +142,23 @@ span:hover {
 }
 /* Covers section */
 #recently-heading {
-  padding: 30px;
+  padding: 15px;
+  font-size: 20px;
 }
 #recently_played {
   width: 100%;
   justify-content: space-around;
-  align-items: baseline;
-  margin-bottom: 50px;
 }
 .item {
   width: 150px;
   height: 150px;
   align-items: center;
-  padding-right: 10px;
+  position: relative;
+  text-align: center;
 }
 .item img {
-  width: 100%;
+  width: 80%;
+  height: 80%;
 }
 .item h6 {
   text-align: center;
@@ -171,13 +173,139 @@ span:hover {
   color: #696a67;
   padding-top: 5px;
 }
-
+.item:hover .invisible {
+  visibility: visible;
+}
+.invisible {
+  font-size: 50px;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  visibility: hidden;
+}
+#special {
+  visibility: visible;
+  font-size: 50px;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+.heading2 {
+  margin-top: 60px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+.heading3 {
+  margin-top: 20px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+.second-p {
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  font-size: 11px;
+  color: #696a67;
+}
+#crated_for {
+  width: 100%;
+}
+#popular {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.b-radius-50 {
+  border-radius: 50%;
+}
 /* Footer */
  footer#site_footer {
-    background-color: yellowgreen;
-    height: 60px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  background-color: rgb(34, 35, 38);
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#left-part {
+ justify-content: flex-start;
+ width: 25%;
+}
+#sinister-play {
+  height: 40px;
+  width: 40px;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+#sinister-play img {
+  width: 100%;
+}
+#sinister-text {
+  padding-top: 18px;
+  padding-left: 10px;
+  display: inline-block;
+}
+#sinister-play h6 {
+  font-size: 15px;
+}
+#sinister-p {
+  font-size: 10px;
+}
+#sinister-icons {
+  padding-top: 20px;
+  padding-left: 25px;
+  display: inline-block;
+}
+#central-part {
+  width: 50%;
+  justify-content: center;
+  justify-content: space-around;
+  position: relative;
+}
+.buttons-part {
+  margin-top: 10px;
+}
+.buttons-part i {
+  padding-right: 20px;
+}
+.music-time {
+  position: absolute;
+  bottom: 10px;
+  width: 500px;
+  justify-content: space-between;
+}
+.timing-line {
+  width: 400px;
+  height: 6px;
+  background: #696a67;
+  border-radius: 2px;
+}
+.little-line {
+  width: 80px;
+  height: 6px;
+  background: white;
+  border-radius: 2px;
+}
+#right-part {
+  justify-content: flex-end;
+  width: 25%;
+  padding-right: 10px;
+}
+.buttons-part2 {
+  margin-top: 25px;
+}
+.buttons-part2 i {
+  padding-right: 10px;
+}
+.volume-line {
+  margin-top: 29px;
+  width: 100px;
+  height: 6px;
+  background: #696a67;
+  border-radius: 2px;
+}
+.volume {
+  width: 25px;
+  height: 6px;
+  background: white;
+  border-radius: 2px;
 }
