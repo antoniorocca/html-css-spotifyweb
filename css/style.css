@@ -445,6 +445,52 @@ span:hover {
 }
 /* responsive height 350*/
 @media all and (max-height: 350px) {
-
-
+   #recently-heading {
+    margin-top: 40px;
+   }
+   footer#site_footer {
+     height: 56vh;
+   }
+   #sinister-play {
+     height: 70px;
+     width: 70px;
+     padding-top: 70px;
+     padding-left: 20px;
+   }
+   #sinister-text {
+     padding-top: 80px;
+     padding-left: 30px;
+     display: inline-block;
+   }
+   #sinister-icons {
+     padding-top: 84px;
+     padding-left: 35px;
+     display: inline-block;
+   }
+   .buttons-part {
+     font-size: 30px;
+     position: absolute;
+     bottom: 50%;
+   }
+   .music-time {
+     position: absolute;
+     top: 70%;
+     width: 500px;
+     justify-content: space-between;
+   }
+   #right-part {
+     justify-content: flex-end;
+     width: 25%;
+     padding-right: 35px;
+   }
+   .buttons-part2 {
+     margin-top: 85px;
+   }
+   .volume-line {
+     margin-top: 89px;
+     width: 100px;
+     height: 6px;
+     background: #696a67;
+     border-radius: 2px;
+   }
 }
