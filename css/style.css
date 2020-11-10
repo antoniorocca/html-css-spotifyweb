@@ -10,7 +10,6 @@
 .flex-wrap {
     flex-wrap: wrap;
 }
-
 body {
     background-color: #333;
     color: white;
@@ -22,36 +21,36 @@ body {
     justify-content: space-between;
 }
 #site_content{
-    height: 100%;
+  height: 100%;
 }
 aside.main_menu {
-    min-width: 250px;
+    width: 250px;
     background-color: black;
     height: 100%;
     margin-bottom: 60px;
     position: relative;
 }
-.item-menu1 {
-  height: 40px;
-}
 .item-menu2 {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .item-menu3 {
   margin-top: 20px;
   line-height: 2rem;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .item-menu4 {
   position: absolute;
   bottom: 0;
   line-height: 2rem;
-  margin-left: 20px;
+  margin-left: 30px;
+}
+#invisible-logo {
+  visibility: hidden;
+  width: 30px;
 }
 #logo {
   width: 150px;
   margin-top: 30px;
-  margin-left: 20px;
   margin-bottom: 30px;
 }
 #home {
@@ -85,11 +84,11 @@ span:hover {
 #hr-menu4 {
   width: 200px;
 }
-.fa-arrow-circle-down, .fa-user {
-  padding-right: 10px;
+.no-visible {
+  padding-left: 10px;
 }
-#john  {
-  color: white;
+.item-menu4:hover {
+  color: #696a67;
 }
 .covers_section {
     background-color: #01000a;
@@ -308,4 +307,144 @@ span:hover {
   height: 6px;
   background: white;
   border-radius: 2px;
+}
+/* responsive medium screen */
+@media all and (min-width: 769px) and (max-width: 1200px) {
+  .covers-navbar {
+    width: 100%;
+    height: 50%;
+  }
+  #recently_played {
+    width: 100%;
+    height: 65%;
+    justify-content: flex-start;
+  }
+  #left-part,  #right-part {
+    width: 100%;
+  }
+  #central-part {
+    width: 100%;
+  }
+  .music-time {
+    width: 100%;
+  }
+}
+/* responsive small screen */
+@media all and (max-width: 768px) {
+  .covers-navbar {
+    font-size: 0.75em;
+    width: 100%;
+    height: 15%;
+  }
+  #recently_played {
+    width: 100%;
+    height: 100%;
+  }
+  #recently_played .item {
+    width: 50%;
+  }
+  #created_for {
+    width: 100%;
+  }
+  #created_for .item {
+    width: 50%;
+  }
+  #popular {
+    width: 100%;
+  }
+  #popular .item {
+    width: 50%;
+  }
+  #left-part,  #right-part {
+    font-size: 0.75em;
+    width: 100%;
+  }
+  #central-part {
+    font-size: 0.75em;
+    width: 100%;
+  }
+  .music-time {
+    font-size: 0.8em;
+    width: 100%;
+  }
+}
+/* responsive xs screen */
+@media all and (max-width: 576px) {
+  aside.main_menu {
+    max-width: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  #logo, .connect, .item-menu3 {
+    display: none;
+  }
+  .no-visible {
+    visibility: hidden;
+  }
+  #invisible-logo {
+    visibility: visible;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .item-menu2, .item-menu3 {
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .item-menu4 {
+    margin-left: 15px;
+  }
+  .icon-img {
+   max-width: 30px;
+  }
+  #home {
+    border-left: none;
+  }
+  .subscribe_banner, .covers_section {
+    width: calc(100% - 40px);
+  }
+  .covers-navbar {
+    font-size: 0.75em;
+    width: 100%;
+    height: 15%;
+  }
+  #recently_played {
+    width: 100%;
+    height: 100%;
+  }
+  #recently_played .item {
+    width: 50%;
+  }
+  #created_for {
+    width: 100%;
+  }
+  #created_for .item {
+    width: 50%;
+  }
+  #popular {
+    width: 100%;
+  }
+  #popular .item {
+    width: 50%;
+  }
+  #left-part,  #right-part {
+    font-size: 0.2em;
+    max-width: 30%;
+  }
+  .volume-line, .volume {
+    max-width: 40%;
+    font-size: 0.2em;
+  }
+  #central-part {
+    font-size: 0.2em;
+    max-width: 60%;
+  }
+  .music-time {
+    font-size: 0.2em;
+    max-width: 80%;
+  }
+}
+/* responsive height 350*/
+@media all and (max-height: 350px) {
+
+
 }
